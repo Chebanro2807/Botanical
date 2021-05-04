@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shrtcut icon" href="img/navigaition/logo_title.png">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+    <script src="js/jQuery.js"></script>
+    <script src="js/script.js"></script>
 
 </head>
 <body>
@@ -22,7 +24,7 @@
                 <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
             <div class="phone">
-                <a>Call +380999999999</a>
+                <a href="tel:+380999999999">Call +380999999999</a>
             </div>
         </div>
 
@@ -41,7 +43,7 @@
                 <li><a href="#">Show</a></li>
             </ul>
             <div class="right-menu">
-                <a href="#">
+                <a href="#" class="search">
                     <i class="fas fa-search"></i>
                 </a>
                 <a href="#">
@@ -63,6 +65,19 @@
             <a href="#" class="search-cancel">
                 <i class="fas fa-times"></i>
             </a>
+        </div>
+    </div>
+
+    <!-- Log in and sing up form -->
+
+    <div class="form">
+        <div class="form__login">
+            <strong>Log in</strong>
+            <form>
+                <input type="email" placeholder="Example@gmail.com" name="email">
+                <input type="password" placeholder="Password" name="password">
+                <input type="submit" value="Log in">
+            </form>
         </div>
     </div>
 </body>

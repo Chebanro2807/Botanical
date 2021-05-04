@@ -27,6 +27,9 @@ nav {
     margin-left: 30px;
     color: rgba(0, 0, 0, 0.7);
     font-size: 0.9rem;
+    a{
+        color: rgba(0, 0, 0, 0.7);
+    }
 }
 
 .navigaition {
@@ -118,6 +121,8 @@ nav {
     justify-content: center;
 }
 
+// Popups
+
 .search-bar {
     width: 100%;
     height: 300px;
@@ -129,6 +134,7 @@ nav {
     justify-content: center;
     box-shadow: 2px -5px 30px rgba(0, 0, 0, 0.1);
     z-index: 101;
+    animation: search 0.3s;
     input {
         width: 100%;
         border: none;
@@ -149,7 +155,7 @@ nav {
     align-items: center;
 }
 
-.search-cancel{
+.search-cancel {
     color: #272727;
     font-size: 2rem;
     padding-right: 40px;
@@ -159,7 +165,81 @@ nav {
     }
 }
 
-.search-bar{
+.search-bar {
     display: none;
+    &--active{
+        display: flex;
+    }
 }
-// 
+
+@keyframes search {
+    0% {
+        bottom: -300px;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 102;
+    &__login {
+        width: 420px;
+        padding: 20px 10px;
+        background-color: #ffff;
+        box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 5px;
+        strong {
+            color: #272727;
+            font-size: 2rem;
+            margin: 2px 7px 7px 7px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+        input {
+            width: 90%;
+            height: 45px;
+            margin: 6px 0px;
+            padding: 0px 10px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            outline: none;
+            border-radius: 7px;
+            ::placeholder{
+                color:rgba(0, 0, 0, 0.5);
+            }
+        }
+        input[type="submit"]{
+            background-color: #0b9d8a;
+            color: #ffff;
+            border: none;
+            outline: none;
+            text-transform: uppercase;
+            margin-top: 10px;
+            border-radius: 3px;
+            box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
