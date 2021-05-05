@@ -1,0 +1,106 @@
+.new-arrival {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        strong {
+            font-size: 1.5rem;
+            color: #ffffff;
+            background-color: #202020;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin-top: 40px;
+            padding: 5px 30px;
+            border: 1px solid #e0e0e0;
+        }
+        p {
+            color: #808080;
+            margin: 10px;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.product {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    &__cart {
+        position: absolute;
+        right: -20px;
+        top: -20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        background-color: #0b9b8a;
+        box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.01);
+        display: none;
+        animation: fade 0.3s;
+        &:hover {
+            background-color: #f76b6a;
+            transition: all ease 0.2s;
+        }
+    }
+    &__box {
+        display: flex;
+        flex-grow: 0.5;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #f7f7f7;
+        border-radius: 10px;
+        margin: 20px;
+        &:hover {
+            box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.01);
+        }
+    }
+    &__img {
+        width: 200px;
+        height: 210px;
+        margin: 20px;
+        cursor: pointer;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px 20px;
+        border-top: 1px solid #f3f3f3f3;
+    }
+
+    &__name {
+        color: #727272;
+    }
+
+    &__price {
+        color: #333333;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
+
+.product__box:hover .product__cart {
+    display: flex;
+}
+
