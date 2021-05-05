@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boytanical</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightslider.css">
     <link rel="shrtcut icon" href="img/navigaition/logo_title.png">
-    <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
     <script src="js/jQuery.js"></script>
+    <script src="js/lightslider.js"></script>
     <script src="js/script.js"></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
 
 </head>
 <body>
@@ -46,7 +48,7 @@
                 <a href="#" class="search">
                     <i class="fas fa-search"></i>
                 </a>
-                <a href="#">
+                <a href="#" class="user">
                     <i class="fas fa-user"></i>
                 </a>
                 <a href="#">
@@ -72,13 +74,89 @@
 
     <div class="form">
         <div class="form__login">
+            <a href="#" class="form__cancel">
+                <i class="fas fa-times"></i>
+            </a>
             <strong>Log in</strong>
             <form>
-                <input type="email" placeholder="Example@gmail.com" name="email">
-                <input type="password" placeholder="Password" name="password">
+                <input type="email" placeholder="Example@gmail.com" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
                 <input type="submit" value="Log in">
             </form>
+            <div class="form__btns">
+                <a href="#" class="forget">Forget Your Password?</a>
+                <a href="#" class="sign-up-btn">Create Account</a>
+            </div>
+        </div>
+
+        <div class="form__sign-up">
+            <a href="#" class="form__cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <strong>Sing up</strong>
+            <form>
+                <input type="text" placeholder="Full Name" name="fullname" required>
+                <input type="email" placeholder="Example@gmail.com" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <input type="submit" value="Sing up">
+            </form>
+            <div class="form__btns">
+                <a href="#" class="already-account">Already Have Account?</a>
+            </div>
         </div>
     </div>
+
+    <!--Full slider ------------------------------->
+
+    <ul id="adaptive" class="cs-hidden">
+        <li class="item-a">
+            <div class="full-slider f-slide-1">
+                <div class="full-slider__container">
+                    <div class="full-slider__text-container">
+                        <span>Limited offer</span>
+                        <strong>30% off <br> with <font>promo code</font></strong>
+                        <a href="#" class="full-slider__btn">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <li class="item-a">
+            <div class="full-slider f-slide-2">
+                <div class="full-slider__container">
+                    <div class="full-slider__text-container">
+                        <span>Limited offer</span>
+                        <strong>30% off <br> with <font>promo code</font></strong>
+                        <a href="#" class="full-slider__btn">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <li class="item-a">
+            <div class="full-slider f-slide-3">
+                <div class="full-slider__container">
+                    <div class="full-slider__text-container">
+                        <span>Limited offer</span>
+                        <strong>30% off <br> with <font>promo code</font></strong>
+                        <a href="#" class="full-slider__btn">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <li class="item-a">
+            <div class="full-slider f-slide-4">
+                <div class="full-slider__container">
+                    <div class="full-slider__text-container">
+                        <span>Limited offer</span>
+                        <strong>30% off <br> with <font>promo code</font></strong>
+                        <a href="#" class="full-slider__btn">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
 </body>
 </html>

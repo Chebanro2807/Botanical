@@ -193,7 +193,7 @@ nav {
     align-items: center;
     flex-direction: column;
     z-index: 102;
-    &__login {
+    &__login, &__sign-up {
         width: 420px;
         padding: 20px 10px;
         background-color: #ffff;
@@ -203,6 +203,7 @@ nav {
         align-items: center;
         flex-direction: column;
         border-radius: 5px;
+        position: relative;
         strong {
             color: #272727;
             font-size: 2rem;
@@ -241,5 +242,55 @@ nav {
             box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
         }
     }
+    &__cancel{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        color: #868686;
+        :hover{
+            color: #0b9d8a;
+            transition: all ease 0.3s;
+        }
+    }
+    &__btns {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        a{
+            color: #4d4d4d;
+            font-size: 0.9rem;
+        }
+    }
 }
 
+.sign-up-btn {
+    border-bottom: 1px solid #868686;
+    line-height: 16px;
+}
+
+.form__login, .form__sign-up, .form {
+    display: none;
+}
+
+.form__login--active,
+.form__login--active .form__login {
+    display: flex;
+    animation: fade 0.3s;
+}
+
+.form__sign-up--active,
+.form__sign-up--active .form__sign-up {
+    display: flex;
+    animation: fade 0.3s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
