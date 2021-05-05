@@ -1,4 +1,4 @@
-// for Serach
+//! for Serach
 $(document).on('click', '.search', function(){
     $('.search-bar').addClass('search-bar--active')
 });
@@ -7,7 +7,7 @@ $(document).on('click', '.search-cancel', function(){
     $('.search-bar').removeClass('search-bar--active')
 });
 
-//login and singup form
+//!login and singup form
 
 $(document).on('click', '.user,.already-account', function(){
     $('.form').addClass('form__login--active').removeClass('form__sign-up--active')
@@ -21,7 +21,7 @@ $(document).on('click', '.form__cancel', function(){
     $('.form').removeClass('form__login--active').removeClass('form__sign-up--active')
 });
 
-//Slider
+//!Slider
 
 $(document).ready(function() {
     $('#adaptive').lightSlider({
@@ -31,4 +31,16 @@ $(document).ready(function() {
         slideMargin:0,
         loop:true
     });
+});
+
+//! Popular slider
+
+$(document).ready(function() {
+    $('#autoWidth').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cS-hidden');
+        } 
+    });  
 });
