@@ -50,9 +50,18 @@ $(document).ready(function() {
 
 $(window).scroll(function(){
     if ($(document).scrollTop() > 50) {
-        $('.navigaition').addClass('fix-nav');
+        $('.navigation').addClass('fix-nav');
     }
     else {
-        $('.navigaition').removeClass('fix-nav');
+        $('.navigation').removeClass('fix-nav');
     }
+});
+
+//! for burger
+
+$(document).ready(function(){
+    $('.toggle').click(function(){
+        $('.toggle').toggleClass('active')
+        $('.navigation').toggleClass('active')
+    })
 });

@@ -32,7 +32,7 @@ nav {
     }
 }
 
-.navigaition {
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -303,4 +303,8 @@ nav {
     background-color: #ffffff;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.05);
     z-index: 102;
+}
+
+.toggle {
+    display: none;
 }
