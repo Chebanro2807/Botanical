@@ -44,3 +44,15 @@ $(document).ready(function() {
         } 
     });  
 });
+
+
+//! fix menu when scroll
+
+$(window).scroll(function(){
+    if ($(document).scrollTop() > 50) {
+        $('.navigaition').addClass('fix-nav');
+    }
+    else {
+        $('.navigaition').removeClass('fix-nav');
+    }
+});

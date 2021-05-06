@@ -1,0 +1,35 @@
+.services {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        min-width: 250px;
+        padding: 20px;
+        margin: 15px;
+        flex-grow: 0.7;
+        i {
+            color: #0b9d8a;
+            font-size: 2rem;
+            margin: 15px;
+        }
+        span {
+            color: #222222;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            font-size: 1rem;
+        }
+        p {
+            color: #878787;
+            margin: 0px;
+            font-size: 0.9rem;
+        }
+    }
+}
