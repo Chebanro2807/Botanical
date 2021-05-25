@@ -46,14 +46,16 @@ $(document).ready(function() {
 });
 
 
-//! fix menu when scroll
+//! fixed menu when scroll
 
 $(window).scroll(function(){
     if ($(document).scrollTop() > 50) {
         $('.navigation').addClass('fix-nav');
+        $('.social-call').addClass('fix-social');
     }
     else {
         $('.navigation').removeClass('fix-nav');
+        $('.social-call').removeClass('fix-social');
     }
 });
 
@@ -64,4 +66,29 @@ $(document).ready(function(){
         $('.toggle').toggleClass('active')
         $('.navigation').toggleClass('active')
     })
+    $('.menu').click(function() {
+        $('.navigation').toggleClass('active')
+        $('.toggle').toggleClass('active')
+    })
 });
+
+//! for smooth scrolling
+
+$( () => {
+	
+	//On Scroll Functionality
+	$(window).scroll( () => {
+		var windowTop = $(window).scrollTop();
+		windowTop > 60 ? $('nav').addClass('navShadow') : $('nav').removeClass('navShadow');
+		windowTop > 50 ? $('ul').css('top','80px') : $('ul').css('top','120px');
+	});
+	
+	//Smooth Scrolling Using Navigation Menu
+	$('a[href*="#"]').on('click', function(e){
+		$('html,body').animate({
+			scrollTop: $($(this).attr('href')).offset().top - 100
+		},500);
+		e.preventDefault();
+	});
+});
+

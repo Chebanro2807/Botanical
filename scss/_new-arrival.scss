@@ -11,7 +11,7 @@
         strong {
             font-size: 1.5rem;
             color: #ffffff;
-            background-color: #202020;
+            background-color: #7BA96A;
             letter-spacing: 1px;
             text-transform: uppercase;
             font-weight: 500;
@@ -22,8 +22,11 @@
         p {
             color: #808080;
             margin: 10px;
-            font-size: 0.9rem;
         }
+    }
+    &__details {
+        width: 80%;
+        text-align: center;
     }
 }
 
@@ -63,7 +66,7 @@
         border-radius: 10px;
         margin: 20px;
         &:hover {
-            box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.01);
+            box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
         }
     }
     &__img {

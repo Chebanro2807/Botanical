@@ -13,10 +13,10 @@
 
     .menu {
         position: absolute;
-        top: 110px;
         left: 0px;
+        top: 120px;
         background-color: #ffffff;
-        border-bottom: 4px solid #0b9d8a;
+        border-bottom: 4px solid #7BA96A;
         width: 100%;
         padding: 0px;
         margin: 0px;
@@ -24,6 +24,13 @@
         flex-direction: column;
         display: none;
     }
+
+    nav.navShadow {
+        -webkit-box-shadow:0 4px 30px -5px rgba(0,0,0,0.2);
+        box-shadow:0 4px 30px -5px rgba(0,0,0,0.2);
+        height: 80px;
+    }
+    
 
     .fix-nav .menu {
         top: 80px;

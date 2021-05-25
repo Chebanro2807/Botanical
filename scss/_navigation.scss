@@ -17,7 +17,7 @@ nav {
         color: rgba(0, 0, 0, 0.7);
         font-size: 0.9rem;
         &:hover{
-            color: #0b9d8a;
+            color: #7BA96A;
             transition: all ease 0.3s;
         }
     }
@@ -41,7 +41,7 @@ nav {
 
 .logo {
     img{
-        height: 30px;
+        height: 32px;
     }
 }
 .menu {
@@ -55,7 +55,7 @@ nav {
         a{
             color: #555;
             &:hover{
-                color: #0b9d8a;
+                color: #7BA96A;
                 transition: all ease 0.3s;
             }
         }
@@ -67,7 +67,7 @@ nav {
         font-size: 1.2rem;
         color: rgba(0, 0, 0, 0.7);
         &:hover{
-            color: #0b9d8a;
+            color: #7BA96A;
             transition: all ease 0.3s;
         }
     }
@@ -114,7 +114,7 @@ nav {
     font-size: 0.8rem;
     font-weight: 400;
     border-radius: 50%;
-    background-color: #0b9d8a;
+    background-color: #7BA96A;
     color: #ffff;
     display: flex;
     align-items: center;
@@ -160,7 +160,7 @@ nav {
     font-size: 2rem;
     padding-right: 40px;
     &:hover{
-        color: #0b9d8a;
+        color: #7BA96A;
         transition: all ease 0.3s;
     }
 }
@@ -232,7 +232,7 @@ nav {
             }
         }
         input[type="submit"]{
-            background-color: #0b9d8a;
+            background-color: #7BA96A;
             color: #ffff;
             border: none;
             outline: none;
@@ -248,7 +248,7 @@ nav {
         top: 10px;
         color: #868686;
         :hover{
-            color: #0b9d8a;
+            color: #7BA96A;
             transition: all ease 0.3s;
         }
     }
@@ -298,13 +298,29 @@ nav {
 .fix-nav {
     width: 100%;
     position: fixed;
-    top: 0px;
+    top: 40px;
     left: 0px;
-    background-color: #ffffff;
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.05);
+    background-color: white;
     z-index: 102;
 }
 
+.fix-social {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    z-index: 102;
+}
+
+
+
 .toggle {
     display: none;
+}
+
+nav.navShadow {
+    -webkit-box-shadow:0 4px 30px -5px rgba(0,0,0,0.2);
+    box-shadow:0 4px 30px -5px rgba(0,0,0,0.2);
+    height: 135px;
 }

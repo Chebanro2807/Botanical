@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boytanical</title>
-    <link rel="shortcut icon" href="/img/logo_title.png" type="image/png">
+    <title>Botanical</title>
+    <link rel="shortcut icon" href="img/logo_title.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightslider.css">
     <script src="js/jQuery.js"></script>
@@ -14,15 +14,15 @@
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
 </head>
 <body>
-
+    <a id="home"></a>
     <!-- Navigation -------------------------------------->
     <nav>
         <div class="social-call">
             <div class="social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
             </div>
             <div class="phone">
                 <a href="tel:+380999999999">Call +380999999999</a>
@@ -35,14 +35,14 @@
             </a>
             <div class="toggle"></div>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Popular Plants</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#popular">Popular Plants</a></li>
                 <li>
-                    <a href="#">New Arrival</a>
+                    <a href="#new">New Arrival</a>
                     <span class="sale-lable">Sale</span>
                 </li>
-                <li><a href="#">Discount</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#discount">Discount</a></li>
+                <li><a href="#services">Services</a></li>
             </ul>
             <div class="right-menu">
                 <a href="javascript:void(0);" class="search">
@@ -56,6 +56,10 @@
                         <span class="num-card-product">0</span>
                     </i>
                 </a>
+            </div>
+            
+            <div id="hero-section"> 
+                <div id="head-line"></div>
             </div>
         </div>
     </nav>
@@ -160,6 +164,8 @@
 
     <!-- Popular Plants ------------------------------------------------------>
 
+    <a id="popular"></a>
+
     <div class="popular-heading">
         <h2>Popular Plants</h2>
     </div>
@@ -222,11 +228,15 @@
 
     <!--New Arrival  ----------------------------------------------------->
 
+    <a id="new"></a>
     <section class="new-arrival">
         <div class="new-arrival__heading">
             <strong>New Arrival</strong>
             <p>Our Plants Will Decorate Your Windowsill</p>
+            <p class="new-arrival__details">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deserunt assumenda, dolore totam aperiam, nihil fugit at labore cupiditate sequi blanditiis corporis. Id repudiandae, est facere doloribus inventore natus nobis!</p>
         </div>
+
+
 
         <div class="product">
             <div class="product__box">
@@ -285,6 +295,7 @@
 
     <!-- Sale ---------------------------------------------------->
 
+    <a id="discount"></a>
     <section class="sale">
         <div class="sale__box">
             <img src="img/sale/sale_1.webp">
@@ -331,6 +342,7 @@
 
     <!-- Services ---------------------------------------------------------------->
 
+    <a id="services"></a>
     <section class="services">
         <div class="services__box">
             <i class="fas fa-shipping-fast"></i>
@@ -355,7 +367,7 @@
 
     <footer>
         <span class="copyright">
-            Boytanical 2021
+            Botanical 2021
         </span>
         <div class="subscribe">
             <form action="">
