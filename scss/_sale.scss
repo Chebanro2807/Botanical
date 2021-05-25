@@ -1,3 +1,25 @@
+.discount-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        font-size: 1.5rem;
+        color: #7BA96A;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-top: 40px;
+        padding: 5px 30px;
+        border: 2px solid #7BA96A;
+    }
+    &__details {
+        width: 60%;
+        text-align: center;
+        margin: 10px auto;
+        color: #808080;
+    }
+}
+
 .sale {
     width: 95%;
     display: flex;

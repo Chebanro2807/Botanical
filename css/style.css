@@ -557,19 +557,19 @@ nav.navShadow {
 }
 
 .f-slide-1 {
-  background-image: url(img/slider/slide_1.webp);
+  background-image: url(../img/slider/slide_1.webp);
 }
 
 .f-slide-2 {
-  background-image: url(img/slider/slide_2.webp);
+  background-image: url(../img/slider/slide_2.webp);
 }
 
 .f-slide-3 {
-  background-image: url(img/slider/slide_3.webp);
+  background-image: url(../img/slider/slide_3.webp);
 }
 
 .f-slide-4 {
-  background-image: url(img/slider/slide_4.webp);
+  background-image: url(../img/slider/slide_4.webp);
 }
 
 .popular-heading {
@@ -593,6 +593,13 @@ nav.navShadow {
   margin-top: 40px;
   padding: 5px 30px;
   border: 2px solid #7BA96A;
+}
+
+.popular-heading__details {
+  width: 60%;
+  text-align: center;
+  margin: 10px auto;
+  color: #808080;
 }
 
 .popular-box {
@@ -698,6 +705,8 @@ nav.navShadow {
 .new-arrival__details {
   width: 80%;
   text-align: center;
+  margin: 10px auto;
+  color: #808080;
 }
 
 .product {
@@ -733,7 +742,7 @@ nav.navShadow {
       -ms-flex-align: center;
           align-items: center;
   color: #ffffff;
-  background-color: #0b9b8a;
+  background-color: #7BA96A;
   -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.01);
           box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.01);
   display: none;
@@ -818,6 +827,36 @@ nav.navShadow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.discount-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.discount-heading h2 {
+  font-size: 1.5rem;
+  color: #7BA96A;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 40px;
+  padding: 5px 30px;
+  border: 2px solid #7BA96A;
+}
+
+.discount-heading__details {
+  width: 60%;
+  text-align: center;
+  margin: 10px auto;
+  color: #808080;
 }
 
 .sale {
@@ -1182,6 +1221,12 @@ footer {
   }
   .new-arrival strong {
     font-size: 1.2rem;
+  }
+  .discount-heading__details {
+    font-size: 0.8rem;
+  }
+  .popular-heading__details {
+    font-size: 0.8rem;
   }
   .new-arrival p {
     font-size: 0.8rem;

@@ -27,6 +27,8 @@
     &__details {
         width: 80%;
         text-align: center;
+        margin: 10px auto;
+        color: #808080;
     }
 }
 
@@ -48,7 +50,7 @@
         justify-content: center;
         align-items: center;
         color: #ffffff;
-        background-color: #0b9b8a;
+        background-color: #7BA96A;
         box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.01);
         display: none;
         animation: fade 0.3s;
