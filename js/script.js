@@ -25,6 +25,8 @@ $(document).on('click', '.form__cancel', function(){
 
 $(document).ready(function() {
     $('#adaptive').lightSlider({
+        speed: 1000,
+        pause: 3000,
         adaptiveHeight:true,
         auto:true,
         item:1,
