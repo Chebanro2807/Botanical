@@ -1094,7 +1094,7 @@ footer {
   cursor: pointer;
 }
 
-@media (max-width: 1010px) {
+@media (max-width: 1018px) {
   nav {
     position: relative;
   }
